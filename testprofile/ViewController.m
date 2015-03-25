@@ -111,6 +111,15 @@
 
 - (NSDictionary *)getJSON{
     NSURL *url = [NSURL URLWithString:@"https://api.myjson.com/bins/1jojf"];
+    /** JSON Example
+     {
+     name: "example",
+     screen_name: "example.inc",
+     follow_counts: 234,
+     follower_counts: 123,
+     image: "http://i.imgur.com/ELtLVZy.jpg"
+     }
+     */
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
     NSData *json = [NSURLConnection sendSynchronousRequest:request returningResponse:nil error:nil];
     NSDictionary *dictionary = [NSJSONSerialization JSONObjectWithData:json options:NSJSONReadingMutableContainers error:nil];
