@@ -18,6 +18,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
 
+    self.edgesForExtendedLayout = UIRectEdgeNone;
+    
     NSDictionary *profile = [self getJSON];
     
     UITableView *tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 150, self.view.frame.size.width, self.view.frame.size.height)];
@@ -135,9 +137,38 @@ numberOfRowsInSection:(NSInteger)section{
 (UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     UITableViewCell *cell = [[UITableViewCell alloc] init];
     
-    cell.textLabel.text = [NSString stringWithFormat:@"%d.", indexPath.row];
+    switch (indexPath.row) {
+        case 0:
+            cell.textLabel.text = @"メンバー・アカウント管理";
+            break;
+        case 1:
+            cell.textLabel.text = @"プロフィール";
+            break;
+        case 2:
+            cell.textLabel.text = @"友だちに教える";
+            break;
+        case 3:
+            cell.textLabel.text = @"応答モード";
+            break;
+        case 4:
+            cell.textLabel.text = @"ホーム設定";
+            break;
+        case 5:
+            cell.textLabel.text = @"アカウント設定";
+            break;
+        default:
+            break;
+    }
     
     return cell;
+}
+
+-(void)tableView:
+(UITableView *)tableView
+didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    if (indexPath.row == 1) {
+        [self performSegueWithIdentifier:@"profileEdit" sender:self];
+    }
 }
 
 @end
