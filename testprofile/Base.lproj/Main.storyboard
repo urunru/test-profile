@@ -39,10 +39,31 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <segue destination="fHv-Xy-bcT" kind="show" identifier="messageEdit" id="fqL-db-3Bn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lKm-2K-jSV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2172" y="948"/>
+        </scene>
+        <!--Message Edit View Controller-->
+        <scene sceneID="Xyx-y5-2XR">
+            <objects>
+                <viewController id="fHv-Xy-bcT" customClass="MessageEditViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="NVV-0h-qWx"/>
+                        <viewControllerLayoutGuide type="bottom" id="vTW-lA-vqp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4h9-mw-6dl">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OeU-oa-PCC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2916" y="948"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Ft1-Bp-vRw">

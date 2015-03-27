@@ -11,6 +11,8 @@
 @interface ProfileEditViewController ()
 
 @property NSDictionary *profile;
+@property UITableView *tableView;
+
 
 @end
 
@@ -21,15 +23,21 @@
 
     self.profile = [self getJSON];
     
-    UITableView *tableView = [[UITableView alloc] initWithFrame:self.view.frame style:UITableViewStyleGrouped]; // スタイルを「グループスタイル」にする
-    tableView.delegate = self;
-    tableView.dataSource = self;
-    [self.view addSubview:tableView];
+    self.tableView = [[UITableView alloc] initWithFrame:self.view.frame style:UITableViewStyleGrouped]; // スタイルを「グループスタイル」にする
+    self.tableView.delegate = self;
+    self.tableView.dataSource = self;
+    [self.view addSubview:self.tableView];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void) viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:YES];
+    
+    [self.tableView reloadData];
 }
 
 - (NSDictionary *)getJSON{
@@ -166,6 +174,14 @@ numberOfRowsInSection:(NSInteger)section{
     }
     
     return cell;
+}
+
+-(void)tableView:
+(UITableView *)tableView
+didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    if (indexPath.row == 1 && indexPath.section == 0) {
+        [self performSegueWithIdentifier:@"messageEdit" sender:self];
+    }
 }
 
 @end

@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		296EAA221AC501F5002BA7AC /* ProfileEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 296EAA211AC501F5002BA7AC /* ProfileEditViewController.m */; };
+		296EAA281AC53375002BA7AC /* MessageEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 296EAA271AC53375002BA7AC /* MessageEditViewController.m */; };
+		296EAA371AC54086002BA7AC /* ImageUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 296EAA361AC54086002BA7AC /* ImageUtility.m */; };
 		29E30BC71AC2A1AB00B9D9F5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29E30BC61AC2A1AB00B9D9F5 /* main.m */; };
 		29E30BCA1AC2A1AB00B9D9F5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 29E30BC91AC2A1AB00B9D9F5 /* AppDelegate.m */; };
 		29E30BCD1AC2A1AB00B9D9F5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29E30BCC1AC2A1AB00B9D9F5 /* ViewController.m */; };
@@ -31,6 +33,10 @@
 /* Begin PBXFileReference section */
 		296EAA201AC501F5002BA7AC /* ProfileEditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileEditViewController.h; sourceTree = "<group>"; };
 		296EAA211AC501F5002BA7AC /* ProfileEditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileEditViewController.m; sourceTree = "<group>"; };
+		296EAA261AC53375002BA7AC /* MessageEditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageEditViewController.h; sourceTree = "<group>"; };
+		296EAA271AC53375002BA7AC /* MessageEditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageEditViewController.m; sourceTree = "<group>"; };
+		296EAA351AC54086002BA7AC /* ImageUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageUtility.h; sourceTree = "<group>"; };
+		296EAA361AC54086002BA7AC /* ImageUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageUtility.m; sourceTree = "<group>"; };
 		29E30BC11AC2A1AB00B9D9F5 /* testprofile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testprofile.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		29E30BC51AC2A1AB00B9D9F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		29E30BC61AC2A1AB00B9D9F5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -97,6 +103,10 @@
 				29E30BC41AC2A1AB00B9D9F5 /* Supporting Files */,
 				296EAA201AC501F5002BA7AC /* ProfileEditViewController.h */,
 				296EAA211AC501F5002BA7AC /* ProfileEditViewController.m */,
+				296EAA261AC53375002BA7AC /* MessageEditViewController.h */,
+				296EAA271AC53375002BA7AC /* MessageEditViewController.m */,
+				296EAA351AC54086002BA7AC /* ImageUtility.h */,
+				296EAA361AC54086002BA7AC /* ImageUtility.m */,
 			);
 			path = testprofile;
 			sourceTree = "<group>";
@@ -230,8 +240,10 @@
 			files = (
 				296EAA221AC501F5002BA7AC /* ProfileEditViewController.m in Sources */,
 				29E30BCD1AC2A1AB00B9D9F5 /* ViewController.m in Sources */,
+				296EAA371AC54086002BA7AC /* ImageUtility.m in Sources */,
 				29E30BCA1AC2A1AB00B9D9F5 /* AppDelegate.m in Sources */,
 				29E30BC71AC2A1AB00B9D9F5 /* main.m in Sources */,
+				296EAA281AC53375002BA7AC /* MessageEditViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
