@@ -1,2 +1,2 @@
 screenshot
-![スクリーンショット](screenshot.png)
+![スクリーンショット](screenshot.gif)
